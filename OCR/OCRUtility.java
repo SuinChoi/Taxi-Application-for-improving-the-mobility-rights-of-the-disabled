@@ -1,3 +1,5 @@
+package com.example.myapplication;
+
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.os.Environment;
@@ -10,11 +12,11 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Utility {
+    public class OCRUtility {
 
-    public static final int WidthPixel = 1920; // 가로 픽셀
-    public static final int HeightPixel = 1080; // 높이 픽셀
-    public static IdCard idCard = new IdCard(WidthPixel, HeightPixel, 0.9f); // ID 이미지 정렬 정보
+        public static final int WidthPixel = 1920; // 가로 픽셀
+        public static final int HeightPixel = 1080; // 높이 픽셀
+        public static OCRIdCard idCard = new OCRIdCard(WidthPixel, HeightPixel, 0.9f); // ID 이미지 정렬 정보
 
     // 작업 디렉토리
     public static File getWorkDirectory() {
@@ -34,7 +36,7 @@ public class Utility {
 
         try {
             baos.close();
-            File file = new File(Utility.getWorkDirectory(),name + ".jpg");
+            File file = new File(OCRUtility.getWorkDirectory(),name + ".jpg");
             FileOutputStream fos = new FileOutputStream(file);
             fos.write(data);
             fos.close();
@@ -76,7 +78,7 @@ public class Utility {
     public static String doOcr(Bitmap bitmap) {
 
         TessBaseAPI baseApi = new TessBaseAPI();
-        baseApi.init(Utility.getTessdataPath(), "chi_sim");
+        baseApi.init(OCRUtility.getTessdataPath(), "chi_sim");
         //bitmap = bitmap.copy(Bitmap.Config.ARGB_8888, true); // 必须加此行，tess-two要求BMP必须为此配置
         baseApi.setImage(bitmap);
         String text = baseApi.getUTF8Text();
@@ -165,8 +167,8 @@ public class Utility {
         for (int i = 0; i < length; i++) {
             char c = text.charAt(i);
         
-            if (Utility.DigitCorrectDictionary.containsKey(c)) {
-                correctedText.append(Utility.DigitCorrectDictionary.get(c));
+            if (OCRUtility.DigitCorrectDictionary.containsKey(c)) {
+                correctedText.append(OCRUtility.DigitCorrectDictionary.get(c));
             } else {
                 correctedText.append(c);
             }

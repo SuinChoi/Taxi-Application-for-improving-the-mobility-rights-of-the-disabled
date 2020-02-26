@@ -1,3 +1,5 @@
+package com.example.myapplication;
+
 import android.app.ProgressDialog;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -13,7 +15,7 @@ import android.widget.TextView;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ResultActivity extends AppCompatActivity {
+public class OCRResultActivity extends AppCompatActivity {
 
     private Handler handler;
     private Map<Integer, EditText> tagViewMap;
@@ -24,7 +26,7 @@ public class ResultActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_result);
+        setContentView(R.layout.result);
 
         final TextView stateTextView = findViewById(R.id.state); // 현재 상태 정보를 표시하는 텍스트 상자
         final long startTime = System.currentTimeMillis(); // 기록 시작 시간
@@ -63,10 +65,10 @@ public class ResultActivity extends AppCompatActivity {
         };
 
         // 원본 읽기
-        originalPicture = BitmapFactory.decodeFile(Utility.getWorkDirectory() + "/" + getResources().getString(R.string.original_picture) + ".jpg");
-        IdCard.Rect rect = Utility.idCard.getCardRect(); // ID 자르고 정보 가져오기
+        originalPicture = BitmapFactory.decodeFile(OCRUtility.getWorkDirectory() + "/" + getResources().getString(R.string.original_picture) + ".jpg");
+        OCRIdCard.Rect rect = OCRUtility.idCard.getCardRect(); // ID 자르고 정보 가져오기
         Bitmap cardBitmap = Bitmap.createBitmap(originalPicture, rect.getX(), rect.getY(), rect.getWidth(), rect.getHeight()); // ID카드 세분화
-        Utility.saveBitmap(cardBitmap, getResources().getString(rect.getTagId())); // 저장
+        OCRUtility.saveBitmap(cardBitmap, getResources().getString(rect.getTagId())); // 저장
         ((ImageView) findViewById(R.id.photo)).setImageBitmap(cardBitmap); // 잘라진 ID 보여주기
 
         // ID 카드의 각 매개 변수를 개별적으로 스레드 및 처리
@@ -83,12 +85,12 @@ public class ResultActivity extends AppCompatActivity {
         }
         @Override
         public void run() {
-            IdCard.Rect rect = Utility.idCard.getTagRectMap().get(tagId);
+            OCRIdCard.Rect rect = OCRUtility.idCard.getTagRectMap().get(tagId);
             Bitmap bitmap = Bitmap.createBitmap(originalPicture, rect.getX(), rect.getY(), rect.getWidth(), rect.getHeight()); // 裁剪
             //bitmap = Utility.binary(bitmap); // 이진화
-            Utility.saveBitmap(bitmap, getResources().getString(tagId)); // 저장
-            String result = Utility.doOcr(bitmap); // 텍스트 이미지
-            result = Utility.fix(result, tagId, getResources()); // 버그 픽스
+            OCRUtility.saveBitmap(bitmap, getResources().getString(tagId)); // 저장
+            String result = OCRUtility.doOcr(bitmap); // 텍스트 이미지
+            result = OCRUtility.fix(result, tagId, getResources()); // 버그 픽스
             Message message = new Message();
             message.what = tagId;
             message.obj = result;

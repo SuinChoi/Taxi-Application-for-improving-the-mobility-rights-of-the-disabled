@@ -1,13 +1,15 @@
+package com.example.myapplication;
+
 import android.content.res.Resources;
 import android.graphics.Rect;
 import java.util.HashMap;
 import java.util.Map;
 
-public class IdCard {
+public class OCRIdCard {
     // 장애인복지 카드 크기를 알아야함. 비율 유지!
     // 중국  ID카드는  85.6mm x 54.0mm임 밑에는 그 비율을 유지한것
-    public static final int CardReferenceWidth = 214;
-    public static final int CardReferenceHeight = 135;
+    public static final int CardReferenceWidth = 214;       //430
+    public static final int CardReferenceHeight = 135;      //275
 
     private int widthPixel;
     private int heightPixel;
@@ -90,7 +92,7 @@ public class IdCard {
     private Rect[] rects;
     private Map<Integer, Rect> tagRectMap;
 
-    public IdCard(int widthPixel, int heightPixel, float ratio) {
+    public OCRIdCard(int widthPixel, int heightPixel, float ratio) {
 
         this.widthPixel = widthPixel;
         this.heightPixel = heightPixel;
@@ -135,7 +137,6 @@ public class IdCard {
         for (Rect rect : rects) {
             tagRectMap.put(rect.getTagId(), rect);
         }
-
     }
 
     public Rect getCardRect() {
