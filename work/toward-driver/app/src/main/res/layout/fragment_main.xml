@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginTop="50dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo"
+        android:tint="#000000"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:text="향 해"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:text="대기 승객"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:drawableTop="@drawable/ic_wait_custom"
+            android:padding="22dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/round_corner_button"
+            />
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:text="진행 현황"
+            android:drawableTop="@drawable/ic_ing"
+            android:padding="30dp"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_corner_button"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:text="승객 목록"
+            android:textSize="15sp"
+            android:drawableTop="@drawable/ic_cus_list"
+            android:padding="27dp"
+            android:textColor="#ffffff"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/round_corner_button"
+            />
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:text="승객의 소리"
+            android:drawableTop="@drawable/ic_suggestion"
+            android:padding="25dp"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_corner_button"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="문의사항 010-9102-3813"
+        android:layout_marginTop="58dp"
+        android:gravity="center"
+        android:textSize="13sp"/>
+</LinearLayout>
