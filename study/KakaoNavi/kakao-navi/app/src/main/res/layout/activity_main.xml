@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button"
+        android:onClick="openWebView"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="hello webView"/>
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="425dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:onClick="openNavigation"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="hello navi"/>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+1 -
+  https://developers.kakao.com/docs/android/kakaonavi-api
+  카카오 네비 API 사용법 (ANDROID 내부에)
+https://m.blog.naver.com/PostView.nhn?blogId=rkdwnsdud555&logNo=221133847526&proxyReferer=https%3A%2F%2Fwww.google.com%2F
+  카카오내비 관련
+https://github.com/ckwer6206/FIRST/blob/f2debb1c8bbf29bcb764493ada39d3dd8d65fef8/libraries/kakaonavi/src/main/java/com/kakao/kakaonavi/KakaoNaviService.java
+  카카오내비 설치
+  ◾ 안드로이드 개발 시작하기 => https://developers.kakao.com/docs/android/getting-started
+  ◾ 키 해시 값 얻기 => https://code.google.com/archive/p/openssl-for-windows/downloads (openssl 다운 후 여기 bin 폴더 내에서 명령하면 얻을 수 있음) => 내 키 해시 값 : 2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+  ◾ 카카오 개발자 홈페이지 => https://devtalk.kakao.com/
+
+
+2 0310
+   Material Theme UI Documentation
+https://www.material-theme.com/
+   Material Theme 적용
+https://medium.com/@jeho1335/androidstudio-material-theme-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0-ce4646f5a28e
+  카카오 내비 ver27 로 올리면 AppCompat 오류 딜레마 (build.gradle:app)
+https://stackoverflow.com/questions/52033810/can-i-use-library-that-used-android-support-with-androidx-projects (해결X, maybe restart!!)
+  WebView 사용
+http://zeany.net/4
+  카카오 내비와 WebView
+https://developers.kakao.com/docs/android-reference/com/kakao/kakaonavi/KakaoNaviWebViewActivity.KakaoNaviWebViewClient.html#KakaoNaviWebViewClient()
+  웹뷰에서 카톡 플러스친구 인텐트 실행법
+https://jizard.tistory.com/149
+
+
+3 0312
+   안전모 프로젝트 (다음지도 API, 카카오내비)
+https://seongjaemoon.github.io/android/2018/04/06/ajmMap.html
+   안드로이드 스튜디오 SDK 추가 (이걸 해야하는 걸까 하는 의문)
+https://nsinc.tistory.com/183
+https://re-build.tistory.com/9
+   카카오 내비 오류 ★★★★
+I/chromium: [INFO:CONSOLE(2)] "Uncaught TypeError: Cannot read property 'Valid' of null", source: https://kakaonavi-wguide.kakao.com/build/guidance/Gps.js?v=20180713 (2)
+I/chatty: uid=10080(com.yunwoon.kakaonavisampleproject) identical 1 line
+   엘지폰 연결 드라이버 설치
+https://www.lge.co.kr/lgekor/download-center/downloadCenterList.do#cur
