@@ -1,0 +1,16 @@
+★ Google Map
+  구글 맵 API 키 발급 (SHA-1 인증서 지문 획득)
+명령어 : "C:\Program Files\Android\Android Studio\jre\bin\keytool" -list -v -keystore "%USERPROFILE%\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
+   ==> SHA1 키 얻어 Google APIS 내 기입
+
+   ① 구글 맵 동작시키기
+https://webnautes.tistory.com/647 (접속 - https://console.developers.google.com/apis/)
+   ② 구글 맵에 현재 위치 표시하기
+https://webnautes.tistory.com/1249
+   ③ 구글 맵 현재 위치 따라가기
+https://duzi077.tistory.com/122
+   ④ 참고
+   구글 맵 관련 예제
+   - https://webnautes.tistory.com/647
+   - https://medium.com/@sunminlee89/%EB%AC%B4%EC%9E%91%EC%A0%95-%EC%95%B1%EB%A7%8C%EB%93%A4%EA%B8%B0-5-google-map%EC%9D%84-android-%EC%95%B1%EC%97%90-%EB%9D%84%EC%9A%B0%EA%B8%B0-906bba797d86
+   - https://dlsdn73.tistory.com/610 (구글 맵 API 사용해 실시간 버스 위치 정보 시각화)
