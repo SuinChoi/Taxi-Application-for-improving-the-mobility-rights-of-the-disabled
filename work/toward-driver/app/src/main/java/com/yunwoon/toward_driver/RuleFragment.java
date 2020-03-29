@@ -1,21 +1,22 @@
-package com.yunwoon.towarddriver;
-
+package com.yunwoon.toward_driver;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+
+import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class MainFragment extends Fragment {
+public class RuleFragment extends Fragment {
 
-    public MainFragment() {
+    public RuleFragment() {
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_main, container, false);
+        return inflater.inflate(R.layout.fragment_rule, container, false);
     }
 
 }

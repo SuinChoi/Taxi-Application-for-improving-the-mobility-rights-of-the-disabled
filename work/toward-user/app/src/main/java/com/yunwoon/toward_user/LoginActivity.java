@@ -3,6 +3,7 @@ package com.yunwoon.toward_user;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -23,10 +24,8 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(this, LoadingActivity.class);
         startActivity(intent);
 
-        getWindow().setFlags( //상태바 투명하게
-                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
-                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
-        );
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN); //상태바 공간 사용
+        getWindow().setStatusBarColor(Color.parseColor("#ffffff")); // 상태바 흰색 지정
         getWindow().getDecorView().setSystemUiVisibility( //상태바 글자색 검정 변경
                 View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
         );

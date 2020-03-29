@@ -1,8 +1,9 @@
-package com.yunwoon.towarddriver;
+package com.yunwoon.toward_driver;
 
-import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
+import android.os.Handler;
 
 public class LoadingActivity extends AppCompatActivity {
 

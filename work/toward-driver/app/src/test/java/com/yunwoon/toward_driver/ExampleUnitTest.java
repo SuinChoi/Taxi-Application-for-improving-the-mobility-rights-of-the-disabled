@@ -1,4 +1,4 @@
-package com.yunwoon.towarddriver;
+package com.yunwoon.toward_driver;
 
 import org.junit.Test;
 

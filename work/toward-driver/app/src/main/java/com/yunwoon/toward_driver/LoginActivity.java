@@ -1,7 +1,8 @@
-package com.yunwoon.towarddriver;
+package com.yunwoon.toward_driver;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -22,7 +23,7 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(this, LoadingActivity.class);
         startActivity(intent);
 
-        getWindow().setFlags( //상태바 투명하게
+        getWindow().setFlags( //상태바,하단바 투명하게 [공간 사용]
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
         );
