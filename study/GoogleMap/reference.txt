@@ -1,8 +1,16 @@
 ★ Google Map
   구글 맵 API 키 발급 (SHA-1 인증서 지문 획득)
 명령어 : "C:\Program Files\Android\Android Studio\jre\bin\keytool" -list -v -keystore "%USERPROFILE%\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
-   ==> SHA1 키 얻어 Google APIS 내 기입
+   ==> SHA1 키 얻어 Google APIS 내 기입 (윤원 발급 받음)
 
+★ 코드상 추가
+   build.gradle (:app) 내부
+dependencies {
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+}
+
+★ 예제
    ① 구글 맵 동작시키기
 https://webnautes.tistory.com/647 (접속 - https://console.developers.google.com/apis/)
    ② 구글 맵에 현재 위치 표시하기

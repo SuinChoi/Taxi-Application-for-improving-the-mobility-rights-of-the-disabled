@@ -1,3 +1,19 @@
+0 코드 상 ★
+▶ AndroidManifest.xml
+   => kakao_app_key 윤원 발급 받음
+▶ build.gradle(:app)
+   => dependencies {
+	implementation group: 'com.kakao.sdk', name: 'kakaonavi', version: project.1.27.0
+        }
+▶ build.gradle(KakaoNaviSampleProject)
+  => subprojects {
+   	 repositories {
+  	      mavenCentral()
+  	      maven { url 'https://devrepo.kakao.com/nexus/content/groups/public/' }
+  	  }
+       }
+
+
 1 -
   https://developers.kakao.com/docs/android/kakaonavi-api
   카카오 네비 API 사용법 (ANDROID 내부에)
