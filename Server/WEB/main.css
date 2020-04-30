@@ -1,0 +1,15 @@
+li{
+	vertical-align: middle;
+	text-align: center;
+	display: inline-block;
+	margin: 15px;
+	padding-top: 100px;
+}
+
+a{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Jeju Gothic';
+}
