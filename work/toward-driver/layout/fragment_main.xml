@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo4"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="#a0a0eb"
+        android:text="향 해"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/drive"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:text="운행"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/ic_wait_custom"
+            android:padding="22dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/round_corner_button"
+            />
+        <Button
+            android:id="@+id/drive_process"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:text="진행 현황"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/ic_ing"
+            android:padding="30dp"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_corner_button"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/customer_list"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:text="오늘의 승객"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/ic_cus_list"
+            android:padding="27dp"
+            android:textColor="#ffffff"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/round_corner_button"
+            />
+        <Button
+            android:id="@+id/customer_suggestion"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:text="승객의 소리"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/ic_suggestion"
+            android:padding="25dp"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_corner_button"
+            />
+    </LinearLayout>
+
+</LinearLayout>
