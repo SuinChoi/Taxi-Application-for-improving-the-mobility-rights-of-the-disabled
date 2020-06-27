@@ -1,4 +1,4 @@
-# 향해 🌊
+# 향해 🚖
 ### 장애인 이동권을 위한 택시 애플리케이션
 ### (Taxi-application-for-improving-the-mobility-rights-of-the-disabled)
 S5-5 팀장 최수인 팀원 채윤원
