@@ -18,7 +18,7 @@ About
 
 Develop Contents
 -------
-<img src="/img/contents.png" width="100%">
+</br><img src="/img/contents.png" width="100%">
 </br></br>
 
 Reference
