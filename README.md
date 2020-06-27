@@ -1,13 +1,14 @@
 # 향해 🌊
-### 장애인 이동권을 위한 택시 앱 (Taxi-application-for-improving-the-mobility-rights-of-the-disabled)
+### 장애인 이동권을 위한 택시 애플리케이션
+### (Taxi-application-for-improving-the-mobility-rights-of-the-disabled)
 S5-5 팀장 최수인 팀원 채윤원
 </br></br>
 
 Prototype
 -------
-&nbsp;User version -   https://ovenapp.io/view/enRNSIpKoNdQ2YuC9SEBEmsOjFepwhPO/ 
+- User version -   https://ovenapp.io/view/enRNSIpKoNdQ2YuC9SEBEmsOjFepwhPO/ 
 
-&nbsp;Driver version -   https://ovenapp.io/view/aK47uE7enoSWgqUyquAcUdBnq4oQjf78/
+- Driver version -   https://ovenapp.io/view/aK47uE7enoSWgqUyquAcUdBnq4oQjf78/
 </br></br>
 
 About
